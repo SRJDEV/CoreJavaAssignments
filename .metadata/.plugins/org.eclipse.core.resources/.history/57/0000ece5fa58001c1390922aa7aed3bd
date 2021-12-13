@@ -1,0 +1,71 @@
+package com.zensar;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class MyDate {
+
+	private int day;
+	private int month;
+	private int year;
+	public int getDay() {
+		return day;
+	}
+	public void setDay(int day) {
+		this.day = day;
+	}
+	public int getMonth() {
+		return month;
+	}
+	public void setMonth(int month) {
+		this.month = month;
+	}
+	public int getYear() {
+		return year;
+	}
+	public void setYear(int year) {
+		this.year = year;
+	}
+	public MyDate(int day, int month, int year) {
+		super();
+		this.day = day;
+		this.month = month;
+		this.year = year;
+	}
+	public MyDate() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	
+	
+	public void printDate() {
+		
+		if(day !=0 && month!=0 && year!=0) {
+			
+		 try {
+			    if(day <32 && month <13)
+			    {
+			    String sDate1= String.valueOf(day)+"/"+ String.valueOf(month)+"/"+String.valueOf(year); 
+			    
+			    Date date1=new SimpleDateFormat("dd/MM/yyyy").parse(sDate1);  
+			   
+			    System.out.println("Date is "+"\t"+date1);  
+			    }else {
+			    	System.out.println("Invalid date provided ");
+			    }
+			 
+		 }
+		 catch(Exception e){
+			 System.out.println("Invalid date provided ");
+		 }
+	
+		}else {
+			 System.out.println("To print a date kindly provide one before calling printDate() method");
+		}
+	}
+	
+
+
+}

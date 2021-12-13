@@ -1,0 +1,11 @@
+package com.zensar;
+
+public class MyQueue {
+
+	private static int front, rear, capacity;
+	private static int queue[];
+  	
+	
+	
+	
+}

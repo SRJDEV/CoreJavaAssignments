@@ -1,0 +1,45 @@
+package com.zensar.assignmnt4;
+
+public class InterfaceDemo {
+
+	
+	 static void printll() {
+		 
+		 Circle c = new Circle();
+		 Employee e = new Employee();
+		 
+		 c.print();
+		 e.print();
+		 
+	  }
+ static void sortAll() {
+		 
+		 Circle c = new Circle();
+		 Employee e = new Employee();
+		 
+		 c.sort();
+		 e.sort();
+		 
+	  }
+	
+	public static void main(String[]ar) {
+		
+		
+		printll();
+		sort
+		
+		EmployeeShallowCopy emp = new EmployeeShallowCopy(64222,"Suraj");
+
+		EmployeeShallowCopy empCopy = null;
+		
+		try {
+			empCopy = emp.clone();
+				
+		}
+		catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+		
+	}
+}

@@ -1,0 +1,22 @@
+package com.zensar.assignmnt4;
+
+public class InterfaceDemo {
+
+	
+	 static void printll() {
+		 
+		 Circle c = new Circle();
+		 Employee e = new Employee();
+		 
+		 c.print();
+		 e.print();
+		 
+	  }
+	
+	public static void main(String[]ar) {
+		
+		
+	printll();
+		
+	}
+}

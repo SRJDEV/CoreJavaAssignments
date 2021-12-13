@@ -1,0 +1,9 @@
+package com.zensar.assignmnt3;
+
+public class Shape {
+ 
+	public void draw() {
+		
+		System.out.println("Draw from Base Class");
+	}
+}

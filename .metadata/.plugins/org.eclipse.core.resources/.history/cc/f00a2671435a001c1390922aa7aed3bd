@@ -1,0 +1,15 @@
+package com.zensar.assignmnt3;
+
+public class SubclassOfAbstract extends AbstractTest {
+
+	 // If we won't override the method print(), getting error saying -
+	// The type SubclassOfAbstract must implement the inherited
+   // abstract method AbstractTest.print()
+
+	@Override
+	void print() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,29 @@
+package com.zensar.assignmnt5;
+
+
+import java.util.Scanner;
+
+public class WrapperClassExample {
+
+	
+	
+	public static void main(String []ar) {
+	
+		 Scanner in = new Scanner(System.in);
+		 size =  Integer.parseInt(in.nextLine());
+		 
+		 int[] array = new int[size];
+//	        String s = in.nextLine();
+//	        System.out.println("You entered string " + s);
+		 
+		    System.out.println("Enter a number");
+	        int a = Integer.parseInt(in.nextLine());
+	        
+	         
+	        
+	        
+	        
+	        in.close();
+	 
+	}
+}

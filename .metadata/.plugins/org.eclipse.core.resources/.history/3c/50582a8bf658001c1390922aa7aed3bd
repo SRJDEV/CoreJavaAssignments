@@ -1,0 +1,16 @@
+package com.zensar;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        
+    	MyDate myDate = new MyDate();
+    	myDate.printDate();
+        
+    }
+}

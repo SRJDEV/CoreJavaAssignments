@@ -1,0 +1,15 @@
+package com.zensar.assignmnt3.dessert;
+
+public class Candy extends DessertItem {
+
+	double tax =10.0;
+	double costInDollar = 2;
+
+	
+	@Override
+	double getCost() {
+	  return costInDollar +tax;
+	}
+	
+
+}

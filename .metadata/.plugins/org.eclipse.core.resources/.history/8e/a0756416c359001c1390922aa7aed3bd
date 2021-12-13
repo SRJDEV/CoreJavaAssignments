@@ -1,0 +1,14 @@
+package com.zensar.assignment2;
+
+public class Manager extends Employee {
+
+	
+	double incentive;
+
+	public Manager(double incentive) {
+		super();
+		this.incentive = incentive;
+	}
+	
+	
+}

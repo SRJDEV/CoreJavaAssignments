@@ -1,0 +1,15 @@
+package com.zensar.assignmnt3.dessert;
+
+public class IceCream extends DessertItem {
+
+	
+	double tax =10.0;
+	double costInDollar = 4;
+	static String iceCream ="Ice-Cream";
+
+	
+	@Override
+	double getCost() {
+	  return costInDollar +tax;
+	}
+}

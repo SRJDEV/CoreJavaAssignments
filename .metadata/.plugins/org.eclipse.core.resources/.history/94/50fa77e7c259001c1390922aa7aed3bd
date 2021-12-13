@@ -1,0 +1,20 @@
+package com.zensar.assignment2;
+
+public class Labour extends Employee {
+	
+	double overTime;
+	double basic;
+
+	public Labour(double overTime, double basic) {
+		super();
+		this.overTime = overTime;
+		this.basic =basic;
+	}
+	
+	@Override
+	double calculateSalary() {
+		// TODO Auto-generated method stub
+		return basic+overTime;
+	}
+
+}

@@ -1,0 +1,14 @@
+package com.zensar.assignmnt5;
+
+public class StringExample {
+
+	
+	String s = "ABC";
+	String s1 = new String("ABS");
+	
+	
+	public static void main(String[]arg) {
+		
+	}
+	
+}

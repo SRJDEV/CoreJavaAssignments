@@ -1,0 +1,104 @@
+package com.zensar.assignmnt3.dessert;
+
+import java.util.Scanner;
+
+import javax.management.relation.Role;
+
+public class DessertApp {
+
+	public static int OWNER_ROLE =1;
+	public static int CUSTOMER_ROLE =2;
+	
+	
+	static int ROLE = 0;
+
+	Scanner in = new Scanner(System.in);
+
+	int getRole() {
+
+		System.out.println("Enter Your Role");
+		System.out.println("1 - Owner");
+		System.out.println("2 - Customer");
+
+		try {
+		int role = in.nextInt();
+
+		if (role != OWNER_ROLE && role != CUSTOMER_ROLE) {
+
+			ROLE = 0;
+			System.out.println("Enter Valide Role");
+			return getRole();
+		}
+
+		ROLE = role;
+		return ROLE;
+	}
+		catch (Exception e) {
+			ROLE = 0;
+			System.out.println("Kindly Enter Valid Role");
+			return 0;
+		}
+		
+	}
+
+	
+	void showAddDessetsMenu() {
+		
+		if(ROLE == OWNER_ROLE) {
+		 	
+			
+			System.out.println("::::: Welcome to  Dessert Storage ::::: \n\n");
+			
+			System.out.println(" ** Details of Avaialble  Desserts in Storage **");
+			 
+			System.out.println("/t Available Candies : "+DessertStorage.getAvailableCandies());
+			System.out.println("/t Available Cookies : "+DessertStorage.getAvailableCookies());
+			System.out.println("/t Available IceCreams : "+DessertStorage.getAvailableIceCreams());
+			
+			
+			
+			
+			
+			
+			
+
+			
+			
+		}else {
+			System.out.println("Unauthorized access!");
+			return;
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	public static void main(String[] ar) {
+
+	System.out.println(":::::::: Welcome To World OF Dessert ::::::::\n\n");
+	
+	 DessertApp dessertApp = new DessertApp();
+	 
+	 dessertApp.getRole();
+	 
+	 // owner logic
+	 if(ROLE ==1) {
+		 
+		 System.out.println(":::::::: Hello Owner, Nice to see you! ::::::::\n\n");
+		 
+	 }
+
+	}
+
+}

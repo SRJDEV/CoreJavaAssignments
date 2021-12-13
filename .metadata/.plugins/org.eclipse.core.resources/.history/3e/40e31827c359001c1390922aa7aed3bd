@@ -1,0 +1,20 @@
+package com.zensar.assignment2;
+
+public class Manager extends Employee {
+
+	
+	double incentive;
+	double basic;
+
+	public Manager(double incentive,double basic) {
+		super();
+		this.incentive = incentive;
+		this.basic = basic;
+	}
+	
+	@Override
+	double calculateSalary() {
+       
+		return basic+incentive;
+	}
+}

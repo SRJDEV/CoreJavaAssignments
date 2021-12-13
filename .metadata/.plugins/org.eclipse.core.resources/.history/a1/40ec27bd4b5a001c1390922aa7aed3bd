@@ -1,0 +1,21 @@
+package com.zensar.assignmnt3;
+
+ abstract class AbstractTest {
+
+	
+	//This can not be done without making class as abstract
+	//abstract void myAbstractMethod();
+	
+	  abstract void print();
+	
+	public static void main(String[]arg) {
+		
+		
+		//hence we can not instantiate the abstract class
+		//AbstractTest t = new  AbstractTest();
+		
+	}
+	
+	 
+	
+}

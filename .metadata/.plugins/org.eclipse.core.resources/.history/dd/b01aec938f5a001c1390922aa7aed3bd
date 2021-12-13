@@ -1,0 +1,23 @@
+package com.zensar.assignmnt3.dessert;
+
+public class DessertStorage {
+
+	private static long CANDIES_AVAILABLE = 0;
+	public static long COOKIES_AVAILABLE = 0;
+	public static long ICECREAMS_AVAILABLE = 0;
+
+	static long getAvailableCandies() {
+
+		return CANDIES_AVAILABLE;
+	}
+
+	static long getAvailableCookies() {
+
+		return COOKIES_AVAILABLE;
+	}
+
+	static long getAvailableIceCreams() {
+
+		return ICECREAMS_AVAILABLE;
+	}
+}

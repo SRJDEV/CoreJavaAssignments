@@ -1,0 +1,17 @@
+package com.zensar.assignmnt5.stud;
+
+import com.zensar.assignmnt5.fact.Faculty;
+
+public class Student {
+
+	
+	
+	
+	public static void main(String[]ar) {
+	
+		Faculty faculty = new Faculty();
+		faculty.getStudentsMaek(1);
+	
+	}
+	
+}

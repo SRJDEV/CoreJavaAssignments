@@ -1,0 +1,11 @@
+package com.zensar.assignmnt4;
+
+public class Employee implements Printable {
+
+	public void print() {
+		
+		System.out.println("Printing details of Employee");
+		
+	}
+
+}

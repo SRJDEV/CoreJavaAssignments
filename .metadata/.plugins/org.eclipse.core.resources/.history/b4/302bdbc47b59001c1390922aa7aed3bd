@@ -1,0 +1,45 @@
+package com.zensar;
+
+import java.time.LocalDate;
+import java.util.Date;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	
+    	
+    	//1
+        
+//    	MyDate myDate = new MyDate();
+//    	
+//    	myDate.setDay(33);
+//    	myDate.setMonth(2);
+//    	myDate.setYear(2021);
+//    	myDate.printDate();
+//    	
+//    	
+//    	Date date1 = myDate.getDate("12/12/2021");
+//       	Date date2 = myDate.getDate("13/12/2021");
+//    	
+//       	Date[] dates = new Date[]{date1,date2};
+//   
+//    	myDate.swapDates(dates);
+    	
+    	
+    	//// stack push pop
+    	
+    	StackedArray stack = new StackedArray(3);
+    	stack.push(10);
+    	stack.push(20);
+    	stack.pop();
+    	stack.print();
+    	
+    	
+        
+    }
+}

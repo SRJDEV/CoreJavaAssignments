@@ -1,0 +1,19 @@
+package com.zensar;
+
+public class MyQueue {
+
+	private  int front, rear, capacity;
+	private  int queue[];
+  	
+	
+	MyQueue(int capacity){
+		
+		front = rear = 0;
+		this.capacity = capacity;
+		
+	}
+	
+	
+	
+	
+}

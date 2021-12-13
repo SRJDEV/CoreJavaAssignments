@@ -1,0 +1,25 @@
+package com.zensar.assignmnt6;
+
+public class ExceptionHandlingDemo {
+
+	
+	
+	void convertStringToInt(String num) {
+		
+		try {
+		int number = Integer.parseInt(num);
+	}catch(ArithmeticException e) {
+		e.printStackTrace();
+	}catch(NumberFormatException e) {
+		
+	}
+		
+	}
+	
+	
+	public static void main(String[]ar) {
+		
+	
+		
+	}
+}

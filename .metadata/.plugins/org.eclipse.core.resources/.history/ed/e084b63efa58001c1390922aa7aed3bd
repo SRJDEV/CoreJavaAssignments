@@ -1,0 +1,20 @@
+package com.zensar;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        
+    	MyDate myDate = new MyDate();
+    	myDate.setDay(1);
+    	myDate.setMonth(5);
+    	myDate.setYear(1991);
+    	
+    	myDate.printDate();
+        
+    }
+}

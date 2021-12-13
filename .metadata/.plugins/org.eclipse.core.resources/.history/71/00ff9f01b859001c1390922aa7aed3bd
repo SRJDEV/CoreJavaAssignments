@@ -1,0 +1,74 @@
+package com.zensar;
+
+public class MyQueue {
+
+	private int front, rear, capacity;
+	private int queue[];
+
+	MyQueue(int capacity) {
+
+		front = rear = 0;
+		this.capacity = capacity;
+		this.queue = new int[capacity];
+
+	}
+
+	void enque(int data) {
+		// add data in queue
+
+		if (capacity == rear) {
+			System.out.println("Queue is full\n");
+			return;
+		} else {
+			// we are good to go
+
+			// insert at rear
+
+			queue[rear] = data;
+			rear++;
+
+		}
+		return;
+
+	}
+
+	void dequeue() {
+
+		// if queue is empty
+		if (front == rear) {
+			System.out.println("Queue is empty\n");
+			return;
+		} else {
+
+			// shift all elements to left by 1
+			for (int i = 0; i < rear - 1; i++) {
+
+				queue[i] = queue[i + 1];
+
+				// storing 0 at rear
+				if (rear < capacity)
+					queue[rear] = 0;
+
+				rear--;
+
+			}
+		}
+
+	}
+
+	void queueDisplay() {
+		int i;
+		if (front == rear) {
+			System.out.println("Queue is Empty\n");
+			return;
+		}
+
+		// print elements
+		for (i = front; i < rear; i++) {
+			System.out.printf(" %d <-- ", queue[i]);
+		}
+		System.out.println("\n");
+		return;
+	}
+
+}

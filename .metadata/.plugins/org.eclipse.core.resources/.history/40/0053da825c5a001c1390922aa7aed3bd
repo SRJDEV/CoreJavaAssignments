@@ -1,0 +1,25 @@
+package com.zensar.assignmnt4;
+
+public class EmployeeDemo implements Cloneable {
+
+	 int id;
+	 String empName;
+	
+	 
+	 public EmployeeDemo(int id, String empName) {
+		super();
+		this.id = id;
+		this.empName = empName;
+	}
+	 
+	 
+	 @Override
+	protected Object clone() throws CloneNotSupportedException {
+		
+		return super.clone();
+	}
+	 
+	 
+	
+	
+}

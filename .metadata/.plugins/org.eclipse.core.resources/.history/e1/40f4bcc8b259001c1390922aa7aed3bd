@@ -1,0 +1,20 @@
+package com.zensar;
+
+public class DLLClass {
+
+	
+	int data;
+    DLLClass prev;
+    DLLClass next;
+	
+    
+    public DLLClass(int data) {
+		super();
+		this.data = data;
+	}
+    
+    
+    
+    
+	
+}

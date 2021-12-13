@@ -1,0 +1,47 @@
+package com.zensar.assignmnt5;
+
+public class StringImmutable {
+	
+	
+	public static void referenceCheck(Object x, Object y) {  
+        if (x == y) {  
+            System.out.println("Both pointing to the same reference");  
+   
+        } else {  
+            System.out.println("Both are pointing to different reference");  
+        }  
+    }  
+	
+	
+	
+	
+	 public static void concatSting(String s1) {
+	        s1 = s1 + "forgeeks";
+	    }
+	 
+	    // Method 2
+	    // Concatenates to StringBuilder
+	    public static void concatStringBuilder(StringBuilder s2)
+	    {
+	        s2.append("forgeeks");
+	    }
+	 
+	    // Method 3
+	    // Concatenates to StringBuffer
+	    public static void concatStringBuffer(StringBuffer s3)
+	    {
+	        s3.append("forgeeks");
+	    }
+	
+	
+	public static void main(String[] args) {  
+        String st1 = "Java";  
+        String st2 = "Java";  
+        System.out.println("Before Modification in st1");  
+        referenceCheck(st1, st2);  
+        st1 += "new";  
+        System.out.println("After Modification");  
+        referenceCheck(st1, st2);  
+    }  
+
+}

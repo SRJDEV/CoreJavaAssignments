@@ -1,0 +1,31 @@
+package com.zensar.assignmnt6;
+
+public class ExceptionHandlingDemo {
+
+	
+	
+	static void convertStringToInt(String num) {
+		
+		try {
+		int number = Integer.parseInt(num);
+	}catch(ArithmeticException e) {
+		System.out.println("Inside Arithmatic format exception");
+		e.printStackTrace();
+	}catch(NumberFormatException e) {
+		System.out.println("Inside numer format exception");
+		e.printStackTrace();
+	}
+		finally {
+			System.out.println("See you!");
+		}
+		
+	}
+	
+	
+	public static void main(String[]ar) {
+		
+		convertStringToInt("20s");
+	
+		
+	}
+}

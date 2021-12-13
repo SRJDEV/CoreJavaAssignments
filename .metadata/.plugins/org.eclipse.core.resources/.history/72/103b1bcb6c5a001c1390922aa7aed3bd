@@ -1,0 +1,21 @@
+package com.zensar.assignmnt4;
+
+public class Person {
+	
+	double  height_in_inches;
+	double weight;
+	
+	
+	public Person(double height_in_inches, double weight) {
+		super();
+		this.height_in_inches = height_in_inches;
+		this.weight = weight;
+	}
+	
+	
+	public static void main(String args) {
+		
+	}
+	
+
+}

@@ -1,0 +1,13 @@
+package com.zensar.assignmnt3;
+
+public class SubclassOfAbstract extends AbstractTest {
+
+	@Override
+	void print() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+
+}

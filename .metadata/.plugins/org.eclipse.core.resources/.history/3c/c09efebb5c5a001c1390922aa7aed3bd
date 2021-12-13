@@ -1,0 +1,20 @@
+package com.zensar.assignmnt4;
+
+public class EmployeeDeepCopy implements Cloneable{
+
+	 int id;
+	 String empName;
+	
+	 
+	 public public EmployeeDeepCopy() {
+		// TODO Auto-generated constructor stub
+	}(int id, String empName) {
+		super();
+		this.id = id;
+		this.empName = empName;
+	}
+	
+	
+	
+	
+}

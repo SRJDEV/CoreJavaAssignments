@@ -1,0 +1,52 @@
+package com.zensar.assignmnt3.dessert;
+
+import java.util.Scanner;
+
+public class DessertApp {
+	
+	
+	 static int ROLE = 0;
+	 
+	 Scanner in = new Scanner(System.in);
+	
+	 int getRole() {
+	
+    System.out.println("Enter Your Role");
+    System.out.println("1 - Owner");
+    System.out.println("2 - Customer");
+    
+    int role = in.nextInt();
+	
+    if(role!=1 || role!=2) {
+     
+    	ROLE=0;
+    	System.out.println("Enter Valide Role");
+    	return ROLE; 
+    }
+    
+      ROLE=role;
+      return ROLE;
+	 }
+	
+	
+	
+	
+	
+	
+	public static void main(String[]ar) {
+	
+		 Scanner in = new Scanner(System.in);
+		 
+		 
+		  
+	        int a = in.nextInt();
+	        System.out.println("You entered integer " + a);
+		
+		System.out.println("::::::::Welcome To World OF Dessert ::::::::\n\n");
+		
+		 
+		
+		
+	}
+
+}

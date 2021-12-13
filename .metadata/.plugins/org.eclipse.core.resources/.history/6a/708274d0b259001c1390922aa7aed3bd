@@ -1,0 +1,79 @@
+package com.zensar;
+
+import java.time.LocalDate;
+import java.util.Date;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	
+    	
+    	//1
+        
+//    	MyDate myDate = new MyDate();
+//    	
+//    	myDate.setDay(33);
+//    	myDate.setMonth(2);
+//    	myDate.setYear(2021);
+//    	myDate.printDate();
+//    	
+//    	
+//    	Date date1 = myDate.getDate("12/12/2021");
+//       	Date date2 = myDate.getDate("13/12/2021");
+//    	
+//       	Date[] dates = new Date[]{date1,date2};
+//   
+//    	myDate.swapDates(dates);
+    	
+    	
+    	//// stack push pop
+    	
+//    	StackedArray stack = new StackedArray(3);
+//    	stack.push(10);
+//    	stack.push(20);
+//    	stack.push(30);
+//    	stack.push(40);
+//    	stack.pop();
+//    	stack.print();
+    	
+    	
+    	
+    	////Queue enqueue dequeue
+    	
+    	
+//    	MyQueue queue = new MyQueue(3);
+//    	
+//    	queue.enque(10);
+//    	queue.enque(20);
+//    	queue.enque(30);
+//    	
+//    	queue.queueDisplay();
+//    	
+//    	queue.dequeue();
+//    	
+//    	queue.queueDisplay();
+    	
+    	
+    	
+    	//// Singleton class
+    	
+    	  //we can not instantiate the singleton class as 
+    	 //it has only constructor which is private
+    	
+    	//MySingleton singleton = new MySingleton(); ---> we can not do this
+    	
+        MySingleton singleton =	 MySingleton.getInstance();
+        MySingleton singleton2 = MySingleton.getInstance();
+        
+        System.out.println(singleton.hashCode());
+        System.out.println(singleton2.hashCode());
+     
+    	
+        
+    }
+}

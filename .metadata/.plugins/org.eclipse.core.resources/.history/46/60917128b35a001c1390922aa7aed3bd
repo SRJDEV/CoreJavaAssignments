@@ -1,0 +1,187 @@
+package com.zensar.assignmnt3.dessert;
+
+import java.util.Scanner;
+
+import javax.management.relation.Role;
+
+public class DessertApp {
+
+	public static int OWNER_ROLE = 1;
+	public static int CUSTOMER_ROLE = 2;
+
+	public static int CANDIES_ID = 1;
+	public static int COOKIES_ID = 2;
+	public static int ICECREAM_ID = 3;
+
+	public static String ENTER_VALID_INPUT = "Enter Valid Input";
+
+	static int ROLE = 0;
+
+	Scanner in = new Scanner(System.in);
+
+	int getRole() {
+
+		System.out.println("Enter Your Role");
+		System.out.println("1 - Owner");
+		System.out.println("2 - Customer");
+
+		try {
+			int role = in.nextInt();
+
+			if (role != OWNER_ROLE && role != CUSTOMER_ROLE) {
+
+				ROLE = 0;
+				System.out.println("Enter Valide Role");
+				return getRole();
+			}
+
+			ROLE = role;
+			return ROLE;
+		} catch (Exception e) {
+			ROLE = 0;
+			System.out.println("Kindly Enter Valid Role");
+			return 0;
+		}
+
+	}
+
+	void showAddDessetsMenu() {
+
+		if (ROLE == OWNER_ROLE) {
+
+			System.out.println("::::: Welcome to  Dessert Storage ::::: \n\n");
+
+			System.out.println(" ** Details of Avaialble  Desserts in Storage**\n\n ");
+
+			System.out.println("\t 1. Available Candies : " + DessertStorage.getAvailableCandies() + "\n");
+			System.out.println("\t 2. Available Cookies : " + DessertStorage.getAvailableCookies() + "\n");
+			System.out.println("\t 3. Available IceCreams : " + DessertStorage.getAvailableIceCreams() + "\n");
+
+		} else {
+			System.out.println("Unauthorized access!");
+			return;
+		}
+	}
+
+	void displaytDessertToAdd() {
+
+		if (ROLE == OWNER_ROLE) {
+			System.out.println("To Add Candies Press 1");
+			System.out.println("To Add Cookies Press 2");
+			System.out.println("To Add Ice-Creams Press 3");
+
+			try {
+				int result = in.nextInt();
+
+				if (result == CANDIES_ID) {
+					addCandiesToStorage();
+				} else if (result == COOKIES_ID) {
+					addCookiesToStorage();
+				}else if(result == ICECREAM_ID) {
+					
+				}
+			} catch (Exception e) {
+				System.out.println(ENTER_VALID_INPUT);
+				return;
+			}
+
+		} else {
+			System.out.println("Unauthorized access!");
+			return;
+		}
+	}
+
+	
+
+	void addCandiesToStorage() {
+
+		System.out.println("\n***ADD CANDIES***\n");
+		System.out.println("\nEnter number of candies to be added");
+
+		try {
+			int candies = in.nextInt();
+
+			if (candies > 0) {
+
+				DessertStorage.addCandies(candies);
+				System.out.println("\nCandies added successfully\n");
+				showAddDessetsMenu();
+				displaytDessertToAdd();
+
+			}
+
+		} catch (Exception e) {
+
+		}
+
+	}
+
+	void addCookiesToStorage() {
+
+		System.out.println("\n***ADD COOKIES***\n");
+		System.out.println("\nEnter number of cookies to be added");
+
+		try {
+			int cookies = in.nextInt();
+
+			if (cookies > 0) {
+
+				DessertStorage.addCookies(cookies);
+				System.out.println("Cookies added successfully");
+				showAddDessetsMenu();
+				displaytDessertToAdd();
+				
+
+			}
+
+		} catch (Exception e) {
+
+		}
+
+	}
+
+	void addIceCreamToStorage() {
+
+		System.out.println("\n***ADD ICE CREAM***\n");
+		System.out.println("\nEnter number of Ice Creams to be added");
+
+		try {
+			int icecreams = in.nextInt();
+
+			if (icecreams > 0) {
+
+				DessertStorage.addIceCreams(icecreams);
+				System.out.println("Ice Creams added successfully");
+				showAddDessetsMenu();
+				displaytDessertToAdd();
+		
+
+			}
+
+		} catch (Exception e) {
+
+		}
+
+	}
+	public static void main(String[] ar) {
+
+		System.out.println(":::::::: Welcome To World OF Dessert ::::::::\n\n");
+
+		DessertApp dessertApp = new DessertApp();
+
+		dessertApp.getRole();
+
+		// owner logic
+		if (ROLE == 1) {
+
+			System.out.println(":::::::: Hello Owner, Nice to see you! ::::::::\n\n");
+
+			dessertApp.showAddDessetsMenu();
+
+			dessertApp.displaytDessertToAdd();
+
+		}
+
+	}
+
+}

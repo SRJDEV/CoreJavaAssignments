@@ -1,0 +1,8 @@
+package com.zensar.assignmnt3;
+
+public abstract class Persistance {
+
+	void persist() {
+		
+	}
+}

@@ -1,0 +1,12 @@
+package com.zensar.assignmnt3;
+
+public class SubclassOfAbstract extends AbstractTest.Test {
+
+	@Override
+	void xyz() {
+	    
+		int i;
+		
+	}
+
+}

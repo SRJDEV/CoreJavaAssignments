@@ -1,0 +1,49 @@
+package com.zensar;
+
+public class MyQueue {
+
+	private  int front, rear, capacity;
+	private  int queue[];
+  	
+	
+	MyQueue(int capacity){
+		
+		front = rear = 0;
+		this.capacity = capacity;
+		
+	}
+	
+	void enque(int data) {
+		//add data in queue
+		
+		if(capacity == rear) {
+			  System.out.println("Queue is full\n");
+			  return;
+		}else {
+			//we are good to go
+			 
+			 // insert at rear
+			
+			 queue[rear]=data;
+			 rear++;
+			
+		}
+		return;
+		
+		
+		
+	}
+	
+	void dequeue() {
+		
+		  // if queue is empty
+        if (front == rear) {
+            System.out.println("Queue is empty\n");
+            return;
+        }
+		
+		
+	}
+	
+	
+}

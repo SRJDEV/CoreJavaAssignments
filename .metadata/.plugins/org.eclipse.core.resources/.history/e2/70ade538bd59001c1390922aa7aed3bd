@@ -1,0 +1,61 @@
+package com.zensar;
+
+public class Account {
+	private int id;
+	private double balance;
+
+	Account() {
+	    id = 0;
+	    balance = 0.0;
+	}
+
+	Account (int id, double balance) {
+	id = id;
+	balance = balance;
+	}
+	
+	
+	public int getId() {
+	    return id;
+	}
+	public double getBalance() {
+	    return balance;
+	}
+	
+	public void setId (int newId) { 
+	    id = newId;
+	}
+	public void setBalance (double newBalance) {
+	    balance = newBalance;
+	}
+	
+
+	double withdraw (double amount) {  
+	    return balance -= amount;
+	}
+	 
+	double deposit(double amount) {
+	    return balance += amount;
+	}
+
+	    public static void main(String[] args) {
+	        Account account1 = new Account (1122, 20000); 
+	        //account1.withdraw(2500);
+	        //account1.deposit(3000);
+	        System.out.println("----------------------------------------");
+	        System.out.println("Welcome to Zensar online account!");
+	        System.out.println("Please find your account details below");
+	        System.out.println("----------------------------------------");
+
+	        System.out.println("Account ID:" + " " + account1.id);
+	        System.out.println("Initial Balance:" + account1.getBalance());
+
+	        System.out.println("Balance after Withdraw:" + " " + account1.withdraw(20000));
+	        System.out.println("Balance after deposit" + " " + account1.deposit(3000));
+	   
+	        System.out.println("------------------------");
+	        System.out.println("The Process is complete");
+	        System.out.println("------------------------");
+	    }
+
+	}

@@ -1,0 +1,28 @@
+package com.zensar;
+
+import java.time.LocalDate;
+import java.util.Date;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        
+    	MyDate myDate = new MyDate();
+    	
+    	myDate.setDay(31);
+    	myDate.setMonth(2);
+    	myDate.setYear(2021);
+    	myDate.printDate();
+    	
+    	
+//    	Date date1 = 
+//    	
+//    	myDate.swapDates();
+        
+    }
+}

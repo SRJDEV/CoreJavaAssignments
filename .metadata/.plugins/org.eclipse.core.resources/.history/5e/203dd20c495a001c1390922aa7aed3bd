@@ -1,0 +1,18 @@
+package com.zensar.assignmnt3;
+
+public abstract class Shape {
+ 
+	public abstract void draw();
+	
+	
+	
+	public static void main(String[]args) {
+		
+		
+		Cube c = new Cube();
+		Shape s = (Shape) c;
+		
+		
+	}
+	
+}

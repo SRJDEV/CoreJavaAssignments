@@ -1,0 +1,14 @@
+package com.zensar.assignmnt4;
+
+public class Contact {
+	
+	String email;
+
+	public Contact(String email) {
+		super();
+		this.email = email;
+	}
+	
+	
+
+}
